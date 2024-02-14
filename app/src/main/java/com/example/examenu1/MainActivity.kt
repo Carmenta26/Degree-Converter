@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
             if (celsiusValue != null) {
                 val fahrenheitValue = celsiusValue * 1.8 + 32
                 editTextFahrenheit.setText(fahrenheitValue.toString())
-            } else {
-                // Manejar el caso en el que el usuario no ingrese un valor válido
             }
         }
 
@@ -32,8 +30,6 @@ class MainActivity : AppCompatActivity() {
             if (fahrenheitValue != null) {
                 val celsiusValue = (fahrenheitValue - 32) / 1.8
                 editTextCelsius.setText(celsiusValue.toString())
-            } else {
-                // Manejar el caso en el que el usuario no ingrese un valor válido
             }
         }
 
